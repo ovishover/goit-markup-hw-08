@@ -55,6 +55,10 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
+.header-container {
+  padding: 16px 15px;
+}
+
 .header__nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -62,6 +66,7 @@ img {
 }
 
 .nav-list {
+  display: none;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -104,6 +109,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: none;
 }
 
 .adress-list a {
@@ -139,9 +145,6 @@ ul .current:after {
 }
 
 .logo__nav {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
   color: #000000;
 }
 
@@ -491,15 +494,7 @@ ul .current:after {
   background-color: #f5f4fa;
 }
 
-.team__list {
-  margin-left: calc(-1 * var(--margin-calc));
-  margin-top: calc(-1 * var(--margin-calc));
-}
-
 .team__item {
-  -ms-flex-preferred-size: calc(100% / 4 - var(--margin-calc));
-      flex-basis: calc(100% / 4 - var(--margin-calc));
-  margin-left: var(--margin-calc);
   margin-top: var(--margin-calc);
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
@@ -508,8 +503,6 @@ ul .current:after {
 }
 
 .team__meta {
-  padding-top: var(--margin-calc);
-  padding-bottom: var(--margin-calc);
   text-align: center;
 }
 
@@ -530,8 +523,22 @@ ul .current:after {
   margin-bottom: 16px;
 }
 
-.clients-list__item:not(:last-child) {
-  padding-right: 30px;
+.clients-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: -30px;
+}
+
+.clients-list__item {
+  width: calc((100% - 30px) / 2);
+  margin-bottom: 30px;
+}
+
+.clients-list__item:nth-child(2n + 1) {
+  margin-right: 30px;
 }
 
 .clients-list__link {
@@ -545,7 +552,7 @@ ul .current:after {
       -ms-flex-align: center;
           align-items: center;
   height: 92px;
-  width: 170px;
+  max-width: 210px;
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -575,8 +582,8 @@ html {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .container {
@@ -704,7 +711,7 @@ html {
 }
 
 .subscribe__input {
-  min-width: 358px;
+  max-width: 100px;
   height: 50px;
   padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -761,8 +768,8 @@ html {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 40px;
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 300px;
+  min-height: 609px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
