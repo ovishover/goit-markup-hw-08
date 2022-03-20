@@ -1,11 +1,13 @@
 .header {
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
-  &-container {
-    // display: flex;
-    padding: 16px 15px;
-  }
 }
+
+.header-container {
+  // display: flex;
+  padding: 16px 0;
+}
+
 .header__nav {
   align-items: center;
 }
