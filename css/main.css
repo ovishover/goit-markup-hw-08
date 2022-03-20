@@ -55,12 +55,6 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .header__nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -83,23 +77,12 @@ img {
   color: var(--accent-color);
 }
 
-.nav-list__item + .nav-list__item {
-  margin-left: 50px;
-}
-
-.adress-list__item + .adress-list__item {
-  margin-left: var(--margin-calc);
-}
-
 .nav-list__link,
 .adress-list__link {
   padding: 32px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-transition: color var(--transition-time) var(--attenuation-function);
   transition: color var(--transition-time) var(--attenuation-function);
 }
@@ -203,9 +186,6 @@ ul .current:after {
 }
 
 .benefits__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: calc(-1 * var(--margin-calc));
 }
 
@@ -460,6 +440,7 @@ ul .current:after {
 
 .activity {
   padding-top: 0px;
+  display: none;
 }
 
 .activity__list {
@@ -511,9 +492,6 @@ ul .current:after {
 }
 
 .team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: calc(-1 * var(--margin-calc));
   margin-top: calc(-1 * var(--margin-calc));
 }
@@ -550,12 +528,6 @@ ul .current:after {
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 16px;
-}
-
-.clients-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .clients-list__item:not(:last-child) {
@@ -602,19 +574,12 @@ html {
           box-sizing: inherit;
 }
 
-.flexability {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .container {
-  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -692,9 +657,6 @@ html {
 }
 
 .footer-cont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -732,9 +694,6 @@ html {
 }
 
 .subscribe__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

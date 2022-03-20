@@ -2,7 +2,7 @@
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
   &-container {
-    display: flex;
+    // display: flex;
   }
 }
 .header__nav {
@@ -24,17 +24,17 @@
   }
 }
 .nav-list__item + .nav-list__item {
-  margin-left: 50px;
+  // margin-left: 50px;
 }
 
 .adress-list__item + .adress-list__item {
-  margin-left: var(--margin-calc);
+  // margin-left: var(--margin-calc);
 }
 .nav-list__link,
 .adress-list__link {
   padding: 32px 0;
   align-items: center;
-  display: flex;
+  // display: flex;
   transition: color var(--transition-time) var(--attenuation-function);
   &:hover,
   &:focus {
