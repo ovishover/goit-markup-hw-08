@@ -221,17 +221,54 @@ ul .current:after {
   color: #757575;
 }
 
-.gallery__item {
-  margin-top: var(--margin-calc);
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: calc(-1 * var(--margin-calc));
+  }
+  .benefits__item {
+    -ms-flex-preferred-size: calc(100% / 2 - var(--margin-calc));
+        flex-basis: calc(100% / 2 - var(--margin-calc));
+    margin-left: var(--margin-calc);
+  }
+}
+
+.button__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.button-list__item {
+  margin-left: 8px;
+  margin-bottom: 15px;
+}
+
+.gallery__style {
+  padding: 20px 24px;
+  background-color: #ffffff;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .gallery__link {
-  display: block;
   text-decoration: none;
   -webkit-transition: -webkit-box-shadow var(--transition-time) var(--attenuation-function);
   transition: -webkit-box-shadow var(--transition-time) var(--attenuation-function);
   transition: box-shadow var(--transition-time) var(--attenuation-function);
   transition: box-shadow var(--transition-time) var(--attenuation-function), -webkit-box-shadow var(--transition-time) var(--attenuation-function);
+}
+
+.gallery__item {
+  margin-top: var(--margin-calc);
 }
 
 .gallery__link:hover,
@@ -245,14 +282,6 @@ ul .current:after {
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: #757575;
-}
-
-.gallery__style {
-  padding: 20px 24px;
-  background-color: #ffffff;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
 }
 
 .gallery__link:hover .gallery__description,
@@ -283,6 +312,7 @@ ul .current:after {
 .gallery__img {
   position: relative;
   overflow: hidden;
+  max-width: 450px;
 }
 
 .gallery__title {
@@ -294,22 +324,41 @@ ul .current:after {
   margin-bottom: 4px;
 }
 
-.gallery__img {
-  max-width: 450px;
-}
-
-.button__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 40px;
-}
-
-.button-list__item {
-  margin-left: 8px;
-  margin-bottom: 15px;
+@media screen and (min-width: 768px) {
+  .button__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .gallery-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: calc(-1 * var(--margin-calc));
+    margin-top: calc(-1 * var(--margin-calc));
+  }
+  .gallery__item {
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  .gallery__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  .gallery__style {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }
 
 .social__link {
@@ -507,6 +556,22 @@ ul .current:after {
   margin-bottom: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .team__item {
+    width: 354px;
+  }
+}
+
 .clients-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -521,8 +586,10 @@ ul .current:after {
   margin-bottom: 30px;
 }
 
-.clients-list__item:nth-child(2n + 1) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .clients-list__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
 }
 
 .clients-list__link {
@@ -536,7 +603,6 @@ ul .current:after {
       -ms-flex-align: center;
           align-items: center;
   height: 92px;
-  max-width: 210px;
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -551,6 +617,18 @@ ul .current:after {
 
 .clients-list__icon {
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list {
+    margin-right: -30px;
+  }
+  .clients-list__item {
+    width: calc(100% / 3 - 30px);
+  }
+  .clients-list__item {
+    margin-right: 30px;
+  }
 }
 
 html {
@@ -575,6 +653,18 @@ html {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 }
 
 .visually-hidden {
@@ -700,6 +790,7 @@ html {
 }
 
 .subscribe__form {
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -754,13 +845,20 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .mobile {
-  width: 350px;
+  width: 480px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe__input {
+    width: 450px;
+  }
 }
 
 .modal {

@@ -1,22 +1,31 @@
-.gallery-list {
-  // display: flex;
-  // flex-wrap: wrap;
-  // margin-left: calc(-1 * var(--margin-calc));
-  // margin-top: calc(-1 * var(--margin-calc));
+.button__list {
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: center;
+  margin-bottom: 40px;
+}
+.button-list__item {
+  margin-left: 8px;
+  margin-bottom: 15px;
 }
 
-.gallery__item {
-  // flex-basis: calc(100% / 3 - var(--margin-calc));
-  // margin-left: var(--margin-calc);
-  margin-top: var(--margin-calc);
-  // flex-grow: 1;
+.gallery__style {
+  padding: 20px 24px;
+  background-color: #ffffff;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .gallery__link {
-  display: block;
   text-decoration: none;
   transition: box-shadow var(--transition-time) var(--attenuation-function);
 }
+
+.gallery__item {
+  margin-top: var(--margin-calc);
+}
+
 .gallery__link:hover,
 .gallery__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -28,14 +37,6 @@
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: #757575;
-}
-
-.gallery__style {
-  padding: 20px 24px;
-  background-color: #ffffff;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
 }
 
 .gallery__link:hover .gallery__description,
@@ -61,6 +62,7 @@
 .gallery__img {
   position: relative;
   overflow: hidden;
+  max-width: 450px;
 }
 
 .gallery__title {
@@ -72,17 +74,26 @@
   margin-bottom: 4px;
 }
 
-.gallery__img {
-  max-width: 450px;
-}
-
-.button__list {
-  display: flex;
-  flex-wrap: wrap;
-  // justify-content: center;
-  margin-bottom: 40px;
-}
-.button-list__item {
-  margin-left: 8px;
-  margin-bottom: 15px;
+@media screen and (min-width: 768px) {
+  .button__list {
+    justify-content: center;
+  }
+  .gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--margin-calc));
+    margin-top: calc(-1 * var(--margin-calc));
+  }
+  .gallery__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  .gallery__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .gallery__style {
+    flex-grow: 1;
+  }
 }
