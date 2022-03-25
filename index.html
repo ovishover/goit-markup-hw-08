@@ -141,30 +141,39 @@
           <ul class="activity__list">
             <li class="activity__item">
               <img
-                src="./images/box1.jpg"
+                srcset="
+                  ./images/activ/activ-1_370.jpg    1x,
+                  ./images/activ/activ-1_370@2x.jpg 2x
+                "
+                src="./images/activ/activ-1_370.jpg"
                 alt="проект 1"
                 width="370"
-                class="activity__img"
               />
               <h3 class="activity__titles">Десктопные приложения</h3>
             </li>
 
             <li class="activity__item">
               <img
-                src="./images/box2.jpg"
+                srcset="
+                  ./images/activ/activ-2_370.jpg    1x,
+                  ./images/activ/activ-2_370@2x.jpg 2x
+                "
+                src="./images/activ/activ-2_370.jpg"
                 alt="проект 2"
                 width="370"
-                class="activity__img"
               />
               <h3 class="activity__titles">Мобильные приложения</h3>
             </li>
 
             <li class="activity__item">
               <img
-                src="./images/box3.jpg"
+                srcset="
+                  ./images/activ/activ-3_370.jpg    1x,
+                  ./images/activ/activ-3_370@2x.jpg 2x
+                "
+                src="./images/activ/activ-3_370.jpg"
                 alt="проект 3"
                 width="370"
-                class="activity__img"
               />
               <h3 class="activity__titles">Дизайнерские решения</h3>
             </li>
@@ -378,65 +387,66 @@
           </ul>
         </div>
       </section>
+
+      <section class="clients section">
+        <div class="container">
+          <h2 class="clients__title">Постоянные клиенты</h2>
+          <ul class="clients-list">
+            <li class="clients-list__item">
+              <a href="#" class="clients-list__link">
+                <svg class="clients-list__icon" width="106" height="60">
+                  <use href="./images/icons.svg#icon-Logo1"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="clients-list__item">
+              <a href="#" class="clients-list__link">
+                <svg class="clients-list__icon" width="106" height="60">
+                  <use href="./images/icons.svg#icon-Logo2"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="clients-list__item">
+              <a href="#" class="clients-list__link">
+                <svg class="clients-list__icon" width="106" height="60">
+                  <use href="./images/icons.svg#icon-Logo3"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="clients-list__item">
+              <a href="#" class="clients-list__link">
+                <svg class="clients-list__icon" width="106" height="60">
+                  <use href="./images/icons.svg#icon-Logo4"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="clients-list__item">
+              <a href="#" class="clients-list__link">
+                <svg class="clients-list__icon" width="106" height="60">
+                  <use href="./images/icons.svg#icon-Logo5"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="clients-list__item">
+              <a href="#" class="clients-list__link">
+                <svg class="clients-list__icon" width="106" height="60">
+                  <use href="./images/icons.svg#icon-Logo6"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-    <section class="clients section">
-      <div class="container">
-        <h2 class="clients__title">Постоянные клиенты</h2>
-        <ul class="clients-list">
-          <li class="clients-list__item">
-            <a href="#" class="clients-list__link">
-              <svg class="clients-list__icon" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo1"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li class="clients-list__item">
-            <a href="#" class="clients-list__link">
-              <svg class="clients-list__icon" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo2"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li class="clients-list__item">
-            <a href="#" class="clients-list__link">
-              <svg class="clients-list__icon" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo3"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li class="clients-list__item">
-            <a href="#" class="clients-list__link">
-              <svg class="clients-list__icon" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo4"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li class="clients-list__item">
-            <a href="#" class="clients-list__link">
-              <svg class="clients-list__icon" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo5"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li class="clients-list__item">
-            <a href="#" class="clients-list__link">
-              <svg class="clients-list__icon" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo6"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
 
     <footer class="footer">
       <div class="container footer-cont">
-        <div>
+        <div class="mobile">
           <a href="index.html" class="logo__footer logo"
             ><span class="logo__text">Web</span>Studio</a
           >
@@ -464,7 +474,7 @@
             </li>
           </ul>
         </div>
-        <div class="join">
+        <div class="join mobile">
           <p class="join__title">присоединяйтесь</p>
           <ul class="social flexability">
             <li class="social__item">

@@ -23,15 +23,6 @@
   }
 }
 
-.button__list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-.button-list__item + .button-list__item {
-  margin-left: 8px;
-}
-
 .main__button {
   background-color: var(--accent-color);
   padding: 10px 32px;
