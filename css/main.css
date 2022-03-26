@@ -121,6 +121,7 @@ html {
 .header {
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
 .header-container {
@@ -136,6 +137,17 @@ html {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.mobile-menu {
+  opacity: 1;
+  position: absolute;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .header__nav {
@@ -654,7 +666,9 @@ ul .current:after {
   color: #ffffff;
 }
 
-.mob__btn {
+.menu-open-btn,
+.menu-close-btn {
+  display: block;
   margin-left: auto;
   background-color: transparent;
   border: none;

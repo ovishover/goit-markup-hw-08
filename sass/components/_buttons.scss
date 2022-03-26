@@ -56,7 +56,9 @@
   color: #ffffff;
 }
 
-.mob__btn {
+.menu-open-btn,
+.menu-close-btn {
+  display: block;
   margin-left: auto;
   background-color: transparent;
   border: none;
