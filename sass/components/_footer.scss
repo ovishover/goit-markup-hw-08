@@ -34,7 +34,9 @@
 .footer-list__item a:focus {
   color: var(--accent-color);
 }
-
+.join {
+  margin-top: 60px;
+}
 .subscribe {
   margin-top: 60px;
 }
@@ -103,11 +105,6 @@
     display: flex;
   }
 
-  .join {
-    // margin-left: 70px;
-    // margin-right: 93px;
-    margin-top: 60px;
-  }
   .subscribe__input {
     width: 360px;
     margin-right: 12px;
