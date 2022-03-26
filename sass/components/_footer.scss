@@ -1,6 +1,9 @@
 .footer {
   background: #2f303a;
-  padding: 60px 0px;
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 .footer-cont {
   display: flex;
