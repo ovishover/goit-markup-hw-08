@@ -49,3 +49,12 @@
     width: 354px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .team__list {
+    justify-content: space-between;
+  }
+  .team__item {
+    max-width: 270px;
+  }
+}
