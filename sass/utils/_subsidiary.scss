@@ -35,6 +35,12 @@ html {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
