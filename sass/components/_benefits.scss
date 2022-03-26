@@ -1,12 +1,4 @@
-.benefits {
-}
-.benefits__list {
-  // display: flex;
-  // margin-left: calc(-1 * var(--margin-calc));
-}
 .benefits__item:not(:last-child) {
-  // flex-basis: calc(100% / 4 - var(--margin-calc));
-  // margin-left: var(--margin-calc);
   margin-bottom: 30px;
 }
 

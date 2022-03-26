@@ -177,12 +177,21 @@ ul .current:after {
 .hero__title {
   font-weight: 900;
   font-size: 20px;
+  max-width: 360px;
   line-height: calc(36 / 20);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 30px;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: calc(40 / 36);
+  }
 }
 
 .hero-img {
@@ -1063,7 +1072,6 @@ html {
 }
 
 .backdrop {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
