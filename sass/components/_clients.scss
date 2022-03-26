@@ -9,15 +9,6 @@
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 767px) {
-  .clients-list {
-    flex-wrap: wrap;
-  }
-  .clients-list__item:nth-child(2n + 1) {
-    margin-right: 30px;
-  }
-}
-
 .clients-list__link {
   display: flex;
   justify-content: center;
@@ -52,4 +43,14 @@
 }
 
 @media screen and (min-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .clients-list__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
 }
