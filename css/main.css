@@ -385,7 +385,6 @@ ul .current:after {
 }
 
 .benefits__title {
-  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -393,6 +392,12 @@ ul .current:after {
   text-transform: uppercase;
   color: #212121;
   margin-bottom: var(--margin-text);
+}
+
+@media screen and (max-width: 767px) {
+  .benefits__title {
+    text-align: center;
+  }
 }
 
 .benefits__discription {
@@ -446,6 +451,12 @@ ul .current:after {
 .button-list__item:not(:last-child) {
   margin-right: 8px;
   margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .button-list__item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 .button-list__item:nth-last-child(-n + 2) {
@@ -991,19 +1002,13 @@ ul .current:after {
   color: var(--accent-color);
 }
 
-.subscribe__form {
-  width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .subscribe__icon {
   margin-left: 10px;
 }
 
 .subscribe__input {
   width: 100%;
+  min-width: 200px;
   height: 50px;
   padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1045,6 +1050,8 @@ ul .current:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -1056,6 +1063,7 @@ ul .current:after {
 @media screen and (max-width: 767px) {
   .join,
   .subscribe {
+    width: 100%;
     margin-top: 60px;
   }
 }
