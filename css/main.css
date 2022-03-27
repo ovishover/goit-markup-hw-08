@@ -81,6 +81,12 @@ html {
   margin-right: auto;
 }
 
+.flexability {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media screen and (min-width: 480px) {
   .container,
   .footer-cont {
@@ -126,9 +132,7 @@ html {
 }
 
 .header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 @media screen and (max-width: 767px) {
@@ -137,6 +141,15 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -278,9 +291,14 @@ html {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .nav-list__item + .nav-list__item {
+    margin-left: 50px;
+  }
+}
+
 .nav-list__link,
 .adress-list__link {
-  padding: 32px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -298,6 +316,13 @@ html {
 .adress-list__link .adress-list__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-list__link,
+  .adress-list__link {
+    padding: 32px 0;
+  }
 }
 
 .adress-list {
@@ -319,6 +344,21 @@ html {
 @media screen and (min-width: 768px) {
   .adress-list {
     display: block;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adress-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adress-list__item + .adress-list__item {
+    margin-left: var(--margin-calc);
   }
 }
 
@@ -351,6 +391,9 @@ ul .current:after {
 }
 
 .logo__nav {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   color: #000000;
 }
 
