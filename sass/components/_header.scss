@@ -37,14 +37,14 @@
   left: 0;
   z-index: 1;
   overflow: auto;
-  transform: translateX(100%);
+  transform: translateX(0%);
   transition: transform 250ms linear;
   padding: 48px 15px 48px 40px;
   @media screen and (min-width: 768px) {
     display: none;
   }
   &.is-hidden {
-    transform: translateX(0);
+    transform: translateX(100%);
   }
 }
 .mob-soc-list {
@@ -172,4 +172,7 @@ ul .current {
     background-color: var(--accent-color);
     border-radius: 2px;
   }
+}
+.current-mob {
+  color: var(--accent-color);
 }
