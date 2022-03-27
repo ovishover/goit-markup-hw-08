@@ -25,7 +25,8 @@ html {
 }
 
 @media screen and (min-width: 480px) {
-  .container {
+  .container,
+  .footer-cont {
     width: 480px;
   }
 }

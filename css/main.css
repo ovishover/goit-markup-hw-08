@@ -82,7 +82,8 @@ html {
 }
 
 @media screen and (min-width: 480px) {
-  .container {
+  .container,
+  .footer-cont {
     width: 480px;
   }
 }
@@ -149,6 +150,15 @@ html {
   left: 0;
   z-index: 2;
   padding: 48px 15px 48px 40px;
+}
+
+.mob__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
 }
 
 .header__nav {
@@ -433,9 +443,13 @@ ul .current:after {
   margin-bottom: 40px;
 }
 
-.button-list__item {
-  margin-left: 8px;
+.button-list__item:not(:last-child) {
+  margin-right: 8px;
   margin-bottom: 15px;
+}
+
+.button-list__item:nth-last-child(-n + 2) {
+  margin-bottom: 0px;
 }
 
 .gallery__style {
@@ -922,6 +936,8 @@ ul .current:after {
   .activity__title,
   .team__title,
   .clients__title {
+    font-size: 36px;
+    line-height: calc(42 / 36);
     margin-bottom: 50px;
   }
 }
@@ -929,12 +945,6 @@ ul .current:after {
 .footer {
   background: #2f303a;
   padding: 60px 0;
-}
-
-@media screen and (min-width: 1200px) {
-  .footer {
-    padding: 94px 0;
-  }
 }
 
 .footer-cont {
@@ -979,14 +989,6 @@ ul .current:after {
 .footer-list__item a:hover,
 .footer-list__item a:focus {
   color: var(--accent-color);
-}
-
-.join {
-  margin-top: 60px;
-}
-
-.subscribe {
-  margin-top: 60px;
 }
 
 .subscribe__form {
@@ -1045,12 +1047,33 @@ ul .current:after {
   display: flex;
 }
 
-.mobile {
-  width: 480px;
-  text-align: center;
+@media screen and (max-width: 767px) {
+  .mobile {
+    width: 480px;
+  }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 767px) {
+  .join,
+  .subscribe {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-cont {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .subscribe__input {
+    width: 450px;
+  }
+  .subscribe {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .subscribe__input {
     margin-bottom: 20px;
   }
@@ -1060,17 +1083,12 @@ ul .current:after {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .subscribe__input {
-    width: 450px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .footer-cont {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    text-align: start;
   }
   .subscribe__form {
     display: -webkit-box;
@@ -1080,6 +1098,9 @@ ul .current:after {
   .subscribe__input {
     width: 360px;
     margin-right: 12px;
+  }
+  .subscribe {
+    margin-top: 0;
   }
 }
 
