@@ -295,6 +295,9 @@ html {
   .nav-list__item + .nav-list__item {
     margin-left: 50px;
   }
+  .nav-list__link {
+    padding: 32px 0;
+  }
 }
 
 .nav-list__link,
@@ -319,7 +322,6 @@ html {
 }
 
 @media screen and (min-width: 1200px) {
-  .nav-list__link,
   .adress-list__link {
     padding: 32px 0;
   }
