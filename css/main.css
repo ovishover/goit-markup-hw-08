@@ -165,13 +165,20 @@ html {
 
 .mobile-menu {
   opacity: 1;
-  position: absolute;
+  position: fixed;
   background-color: #ffffff;
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 1;
+  overflow: auto;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms linear;
+  transition: -webkit-transform 250ms linear;
+  transition: transform 250ms linear;
+  transition: transform 250ms linear, -webkit-transform 250ms linear;
   padding: 48px 15px 48px 40px;
 }
 
@@ -179,6 +186,11 @@ html {
   .mobile-menu {
     display: none;
   }
+}
+
+.mobile-menu.is-hidden {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .mob-soc-list {

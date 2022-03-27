@@ -29,16 +29,22 @@
 
 .mobile-menu {
   opacity: 1;
-  position: absolute;
+  position: fixed;
   background-color: #ffffff;
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 1;
+  overflow: auto;
+  transform: translateX(100%);
+  transition: transform 250ms linear;
   padding: 48px 15px 48px 40px;
   @media screen and (min-width: 768px) {
     display: none;
+  }
+  &.is-hidden {
+    transform: translateX(0);
   }
 }
 .mob-soc-list {
