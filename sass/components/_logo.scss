@@ -6,9 +6,11 @@
   letter-spacing: 0.03em;
   &__nav {
     margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
     color: #000000;
+    @media screen and(min-width: 768px) {
+      padding-top: 24px;
+      padding-bottom: 25px;
+    }
   }
   &__footer {
     // display: block;
